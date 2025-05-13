@@ -150,12 +150,15 @@
 </div>
 
 <script>
-  let count = 0;
-  const button = document.getElementById('counter');
-  button.addEventListener('click', () => {
-    count++;
-    button.textContent = count is ${count};
+  document.addEventListener('DOMContentLoaded', () => {
+    let count = 0;
+    const button = document.getElementById('counter');
+    button.addEventListener('click', () => {
+      count++;
+      button.textContent = `count is ${count}`;
+    });
   });
+</script>
 </script>
 </body>
 </html>
